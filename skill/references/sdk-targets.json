@@ -1,0 +1,216 @@
+{
+  "contract_fingerprint": "b06781a26c4469e8f12830a04d455957bf620d42b9e1df155e93ee00f293d1c9",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "code_jack_rabbit@0.3.4",
+        "ecosystem": "pub.dev",
+        "entry": "OmniWrapClient",
+        "import": "import 'package:code_jack_rabbit/client.dart';"
+      },
+      "operations": {
+        "analyzeContractDrift": {
+          "member": "analyzeContractDrift",
+          "method": "POST",
+          "path": "/v1/analysis/contract-drift",
+          "resource": "analysis",
+          "signature": "Future<ApiResponse> analyzeContractDrift(Map<String, dynamic>? body)"
+        },
+        "analyzePerfFinOps": {
+          "member": "analyzePerfFinOps",
+          "method": "POST",
+          "path": "/v1/analysis/perf-finops",
+          "resource": "analysis",
+          "signature": "Future<ApiResponse> analyzePerfFinOps(Map<String, dynamic>? body)"
+        },
+        "analyzeSupplyChain": {
+          "member": "analyzeSupplyChain",
+          "method": "POST",
+          "path": "/v1/supply-chain/analyze",
+          "resource": "supply_chain",
+          "signature": "Future<ApiResponse> analyzeSupplyChain(Map<String, dynamic>? body)"
+        },
+        "buildAutofixBundle": {
+          "member": "buildAutofixBundle",
+          "method": "POST",
+          "path": "/v1/reviews/autofix",
+          "resource": "reviews",
+          "signature": "Future<ApiResponse> buildAutofixBundle(Map<String, dynamic>? body)"
+        },
+        "collectDeveloperAudit": {
+          "member": "collectDeveloperAudit",
+          "method": "POST",
+          "path": "/cli/managed/developer-audit",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> collectDeveloperAudit(Map<String, dynamic>? body)"
+        },
+        "computeRiskRadar": {
+          "member": "computeRiskRadar",
+          "method": "POST",
+          "path": "/v1/reviews/risk-radar",
+          "resource": "reviews",
+          "signature": "Future<ApiResponse> computeRiskRadar(Map<String, dynamic>? body)"
+        },
+        "createCodingTask": {
+          "member": "createCodingTask",
+          "method": "POST",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "Future<ApiResponse> createCodingTask(Map<String, dynamic>? body)"
+        },
+        "createReview": {
+          "member": "createReview",
+          "method": "POST",
+          "path": "/v1/reviews",
+          "resource": "reviews",
+          "signature": "Future<ApiResponse> createReview(Map<String, dynamic>? body)"
+        },
+        "currentDeveloperIdentity": {
+          "member": "currentDeveloperIdentity",
+          "method": "POST",
+          "path": "/cli/managed/developer-identity",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> currentDeveloperIdentity(Map<String, dynamic>? body)"
+        },
+        "declareDeveloperProjectContext": {
+          "member": "declareDeveloperProjectContext",
+          "method": "POST",
+          "path": "/cli/managed/audit-context",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> declareDeveloperProjectContext(Map<String, dynamic>? body)"
+        },
+        "evaluateComplianceGate": {
+          "member": "evaluateComplianceGate",
+          "method": "POST",
+          "path": "/v1/compliance/gate",
+          "resource": "compliance",
+          "signature": "Future<ApiResponse> evaluateComplianceGate(Map<String, dynamic>? body)"
+        },
+        "exportSarif": {
+          "member": "exportSarif",
+          "method": "POST",
+          "path": "/v1/compliance/sarif",
+          "resource": "compliance",
+          "signature": "Future<ApiResponse> exportSarif(Map<String, dynamic>? body)"
+        },
+        "finalizeMeteringQuota": {
+          "member": "finalizeMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/finalize",
+          "resource": "saas",
+          "signature": "Future<ApiResponse> finalizeMeteringQuota(Map<String, dynamic>? body)"
+        },
+        "generateSbom": {
+          "member": "generateSbom",
+          "method": "POST",
+          "path": "/v1/sbom",
+          "resource": "sbom",
+          "signature": "Future<ApiResponse> generateSbom(Map<String, dynamic>? body)"
+        },
+        "getAnalyticsRoi": {
+          "member": "getAnalyticsRoi",
+          "method": "GET",
+          "path": "/v1/analytics/roi",
+          "resource": "analytics",
+          "signature": "Future<ApiResponse> getAnalyticsRoi()"
+        },
+        "getCapabilities": {
+          "member": "getCapabilities",
+          "method": "GET",
+          "path": "/v1/capabilities",
+          "resource": "capabilities",
+          "signature": "Future<ApiResponse> getCapabilities()"
+        },
+        "getHealth": {
+          "member": "getHealth",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "Future<ApiResponse> getHealth()"
+        },
+        "getSaasBlueprint": {
+          "member": "getSaasBlueprint",
+          "method": "GET",
+          "path": "/v1/saas/blueprint",
+          "resource": "saas",
+          "signature": "Future<ApiResponse> getSaasBlueprint()"
+        },
+        "getTriageQueue": {
+          "member": "getTriageQueue",
+          "method": "GET",
+          "path": "/v1/triage",
+          "resource": "triage",
+          "signature": "Future<ApiResponse> getTriageQueue()"
+        },
+        "issueSurfaceLease": {
+          "member": "issueSurfaceLease",
+          "method": "POST",
+          "path": "/v1/saas/surface-lease/issue",
+          "resource": "saas",
+          "signature": "Future<ApiResponse> issueSurfaceLease(Map<String, dynamic>? body)"
+        },
+        "listCodingTasks": {
+          "member": "listCodingTasks",
+          "method": "GET",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "Future<ApiResponse> listCodingTasks()"
+        },
+        "listWaitlist": {
+          "member": "listWaitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "Future<ApiResponse> listWaitlist()"
+        },
+        "managedAuditSnapshots": {
+          "member": "managedAuditSnapshots",
+          "method": "POST",
+          "path": "/cli/managed/audit-snapshots",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> managedAuditSnapshots(Map<String, dynamic>? body)"
+        },
+        "planStackedPrSplit": {
+          "member": "planStackedPrSplit",
+          "method": "POST",
+          "path": "/v1/analysis/split-pr",
+          "resource": "analysis",
+          "signature": "Future<ApiResponse> planStackedPrSplit(Map<String, dynamic>? body)"
+        },
+        "providerCostEvidence": {
+          "member": "providerCostEvidence",
+          "method": "POST",
+          "path": "/cli/managed/finops",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> providerCostEvidence(Map<String, dynamic>? body)"
+        },
+        "registerWaitlist": {
+          "member": "registerWaitlist",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "Future<ApiResponse> registerWaitlist(Map<String, dynamic>? body)"
+        },
+        "reserveMeteringQuota": {
+          "member": "reserveMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/reserve",
+          "resource": "saas",
+          "signature": "Future<ApiResponse> reserveMeteringQuota(Map<String, dynamic>? body)"
+        },
+        "submitDeveloperEvidence": {
+          "member": "submitDeveloperEvidence",
+          "method": "POST",
+          "path": "/cli/managed/developer-evidence",
+          "resource": "developer_intelligence",
+          "signature": "Future<ApiResponse> submitDeveloperEvidence(Map<String, dynamic>? body)"
+        }
+      },
+      "package_directory": "../code-jack-rabbit-dart-sdk",
+      "package_manifest": "pubspec.yaml",
+      "reference": "api.md",
+      "renderer": "dart"
+    }
+  ]
+}
